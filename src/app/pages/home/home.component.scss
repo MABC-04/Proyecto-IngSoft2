@@ -1,0 +1,28 @@
+.content{
+  margin: 2rem 7rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: 0px 0px 16px 4px rgba(115,152,196,0.59);
+  -moz-box-shadow: 0px 0px 16px 4px rgba(115,152,196,0.59);
+}
+
+.content .prod{
+  background-color: white;
+  margin: 3% 3rem;
+  height: auto;
+  width: 20%;
+  border-radius: 1rem;
+}
+
+.content .prod img{
+  display: block;
+  margin: auto;
+  height: 5rem;
+  width: 5rem;
+}
+
+.content .prod .images{
+  justify-content: center;
+}
