@@ -1,35 +1,28 @@
 <div class="global">
   <app-navbar></app-navbar>
 
-  <div class="content">
-    <div class="prod">
-      <div class="images">
-        <img src="pastilla.jpg" alt="">
-      </div>
-      <h5>Nombre producto</h5>
+  <div class="body-home">
 
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, reiciendis ipsum enim sit consequatur deleniti fugiat ex adipisci quaerat libero soluta recusandae, non nulla delectus obcaecati sed, magnam facere quo!</p>
 
+   <div class="destacados">
+      <h3 class="title">Productos destacados</h3>
+      <swiper-container navigation="true">
+       <swiper-slide *ngFor="let image of imagenes">
+        <img [src]="image" alt="imagenes" class="mostrar">
+        <img [src]="image" alt="imagenes" class="mostrar">
+        <img [src]="image" alt="imagenes" class="mostrar">
+       </swiper-slide>
+      </swiper-container >
     </div>
 
-    <div class="prod">
-      <div class="images">
-        <img src="pastilla.jpg" alt="">
+    <div class="find-drugstore">
+      <div class="section-left ">
+        <h2>Localiza tu farmacia mas cercana</h2>
       </div>
-        <h5>Nombre producto</h5>
-
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, reiciendis ipsum enim sit consequatur deleniti fugiat ex adipisci quaerat libero soluta recusandae, non nulla delectus obcaecati sed, magnam facere quo!</p>
-
-    </div>
-
-    <div class="prod">
-      <div class="images">
-        <img src="pastilla.jpg" alt="">
+      <div class="section-righ">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d60341.710822947716!2d-98.09428480000001!3d19.0480384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1745439058845!5m2!1ses-419!2smx" width="700" height="255" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <h5>Nombre producto</h5>
-
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, reiciendis ipsum enim sit consequatur deleniti fugiat ex adipisci quaerat libero soluta recusandae, non nulla delectus obcaecati sed, magnam facere quo!</p>
-
     </div>
   </div>
+  <app-footer></app-footer>
 </div>

@@ -1,0 +1,53 @@
+/* Estilos */
+.footer {
+  background: #486f99;
+  color: #ecf0f1;
+  padding: 40px 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.footer h4 {
+  color: #f39c12;
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #f39c12;
+}
+
+.footer-social a {
+  color: #ecf0f1;
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.footer-social a:hover {
+  color: #f39c12;
+}
+
+.footer-copyright {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #34495e;
+}

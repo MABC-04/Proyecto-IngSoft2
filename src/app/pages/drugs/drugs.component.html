@@ -1,2 +1,87 @@
-<app-navbar></app-navbar>
-<img src="coming soon.jpeg" alt="">
+<div class="global">
+  <app-navbar></app-navbar>
+
+  <div class="bar">
+    <div class="category">
+      <button  [matMenuTriggerFor]="categoria" aria-label="Example icon-button with a menu" >
+        <h3>categorias</h3>
+        <mat-icon>expand_more</mat-icon>
+      </button>
+      <mat-menu #categoria="matMenu">
+        <button mat-menu-item>
+          <mat-icon>medication_liquid</mat-icon>
+          <span>Analgesicos y antiinflamatorios</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>medication_liquid</mat-icon>
+          <span>Antiinfecciosos</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>medication_liquid</mat-icon>
+          <span>Mucoliticos</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>medication_liquid</mat-icon>
+          <span>Antitusivos</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>medication_liquid</mat-icon>
+          <span>Antipiréticos</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>medication_liquid</mat-icon>
+          <span>Antialérgicos</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>medication_liquid</mat-icon>
+          <span>Antidiarreicos y laxantes</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>medication_liquid</mat-icon>
+          <span>Antiulcerosos y antiácidos</span>
+        </button>
+      </mat-menu>
+    </div>
+    <div class="departamentos">
+      <button  [matMenuTriggerFor]="departamento" aria-label="Example icon-button with a menu" >
+        <h3>departamentos</h3>
+        <mat-icon>expand_more</mat-icon>
+      </button>
+      <mat-menu #departamento="matMenu">
+        <button mat-menu-item>
+          <mat-icon>expand_more</mat-icon>
+          <span>Redial</span>
+        </button>
+        <button mat-menu-item disabled>
+          <mat-icon>voicemail</mat-icon>
+          <span>Check voice mail</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>notifications_off</mat-icon>
+          <span>Disable alerts</span>
+        </button>
+      </mat-menu>
+
+    </div>
+
+    <div class="bar-search">
+      <div class="custom-search">
+        <mat-icon class="search-icon">search</mat-icon>
+        <input type="text" placeholder="Escribe el nombre del compuesto principal" class="search-input">
+      </div>
+    </div>
+
+    <div class="find-pharmacy">
+      <h3>Localiza tu farmacia mas cercana</h3>
+      <mat-icon>location_on</mat-icon>
+    </div>
+
+  </div>
+
+
+  <div class="medicine">
+  </div>
+
+
+  <app-footer></app-footer>
+</div>

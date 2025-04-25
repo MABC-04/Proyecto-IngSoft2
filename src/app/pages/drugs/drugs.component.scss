@@ -1,0 +1,101 @@
+.bar {
+  color: white;
+  background-color: #486f99;
+  padding: 0 1rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  flex-wrap: wrap; /* Permite que los elementos bajen si no caben */
+}
+
+.category, .departamentos, .find-pharmacy {
+  padding: 0 0.8rem;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.bar-search {
+  height: 70%;
+  flex: 1;
+  min-width: 120px;
+  max-width: 50%;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.custom-search {
+  display: flex;
+  align-items: center;
+  background-color: #e8eaf6;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+}
+
+.search-icon {
+  color: black;
+  margin-right: 0.5rem;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: black;
+  height: 100%;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+/* ✅ RESPONSIVE - Estilos móviles */
+@media (max-width: 768px) {
+  .bar {
+    flex-direction: column;
+    height: auto;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .category, .departamentos, .bar-search {
+    height: auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .bar-search {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .custom-search {
+    height: 2.5rem;
+  }
+}
+
+button{
+  border-style: none;
+  margin-top: 1rem;
+  padding: 1rem;
+  color: white;
+  background: none;
+}
+
+button:hover{
+  background-color: white;
+  color: #486f99;
+}
+
+mat-menu, span{
+  color: #486f99;
+}
